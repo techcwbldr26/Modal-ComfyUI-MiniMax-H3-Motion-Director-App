@@ -59,6 +59,9 @@ only failed segments. Full manual: the Director repo's `docs/USER_GUIDE.md`.
 |---|---|
 | `comfyui_director_serve.py` | Modal app (class `@app.server()`, H200, volume-backed models) |
 | `scripts/smoke_director.py` | health + Director node registration check |
+| `AGENTS.md` | runbook for AI harnesses (Cline, Claude Code, Codex, Hermes, OpenCode, …) |
+| `PROMPT_AUTHORING_GUIDE.md` | how to author reference panels + video prompts (read first) |
+| `SETUP_PROMPT.md` | self-contained paste-prompt for a fresh AI chat to run this setup |
 | `PLAN.md` / `GOTCHAS.md` | plan + pitfalls |
 | `.env.example` | Modal keys + HF_TOKEN only (no LLM vars) |
 
