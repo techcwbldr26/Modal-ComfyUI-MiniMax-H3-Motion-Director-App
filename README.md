@@ -5,7 +5,7 @@ Headless **ComfyUI + [MiniMax H3 Motion Director](https://github.com/j955229/Com
 R2V / V2V / RV2V` and **Mixed Mode** timelines with cross-segment continuity,
 Selective Run, Material Library, live preview, and post-processing.
 
-**No LLM.** Pure ComfyUI. You drive it from a **browser**.
+** Pure ComfyUI. You drive it from a **browser**.
 
 Model set: the user-selected MiniMax-H3 files from
 [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3) are
