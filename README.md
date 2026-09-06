@@ -1,4 +1,4 @@
-# ComfyUI-MiniMax-H3-Motion-Director App (Modal H200, no LLM)
+# ComfyUI-MiniMax-H3-Motion-Director App (Modal H200)
 
 Headless **ComfyUI + [MiniMax H3 Motion Director](https://github.com/j955229/ComfyUI-MiniMax-H3-Motion-Director)**
 (v1.2.0) on a Modal H200. Multi-segment video production — `T2V / I2V / FL2V /
