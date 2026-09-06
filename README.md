@@ -34,6 +34,8 @@ modal deploy comfyui_director_serve.py 2>&1 | tee deploy_director.log
 
 curl -s "$DIRECTOR_URL/system_stats"                                 # NVIDIA H200
 uv run python scripts/smoke_director.py --url "$DIRECTOR_URL"        # SMOKE-DIRECTOR-OK
+# optional end-to-end proof (costs GPU minutes, ~5-15 min first run):
+uv run python scripts/smoke_t2v.py --url "$DIRECTOR_URL"             # real MP4 in outputs/
 ```
 
 > **First deploy:** the image build is fast (~1 min), but the first container
@@ -59,6 +61,7 @@ only failed segments. Full manual: the Director repo's `docs/USER_GUIDE.md`.
 |---|---|
 | `comfyui_director_serve.py` | Modal app (class `@app.server()`, H200, volume-backed models) |
 | `scripts/smoke_director.py` | health + Director node registration check |
+| `scripts/smoke_t2v.py` + `workflows/` | end-to-end T2V API proof (real MP4; costs GPU minutes) |
 | `AGENTS.md` | runbook for AI harnesses (Cline, Claude Code, Codex, Hermes, OpenCode, …) |
 | `PROMPT_AUTHORING_GUIDE.md` | how to author reference panels + video prompts (read first) |
 | `SETUP_PROMPT.md` | self-contained paste-prompt for a fresh AI chat to run this setup |

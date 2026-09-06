@@ -155,6 +155,8 @@ download into the volume (Xet). Allow 20–40 minutes and watch
 ```
 comfyui_director_serve.py   Modal app: ComfyUI + Motion Director on H200 (class-based @app.server)
 scripts/smoke_director.py   /system_stats + /object_info smoke test (stdlib only)
+scripts/smoke_t2v.py        end-to-end T2V proof — real MP4 via /prompt API
+workflows/minimax_h3_t2v.json  official T2V template (UI format, converted in-script)
 PROMPT_AUTHORING_GUIDE.md   how to author video prompts for the Director (READ before generating)
 SETUP_PROMPT.md             self-contained paste-prompt for a fresh AI chat to do this setup
 README.md                   human walkthrough
@@ -183,6 +185,12 @@ uv run python scripts/smoke_director.py --url "$DIRECTOR_URL"          # → SMO
 `SMOKE-DIRECTOR-OK` proves: `/system_stats` healthy, ComfyUI ≥ 0.30.0, and all
 three Director nodes (`MiniMaxH3MotionDirector`, `MiniMaxH3MotionDirectorInputs`,
 `MiniMaxH3MotionDirectorAssets`) registered in `/object_info`.
+
+Optional end-to-end proof (real MP4 via the `/prompt` API; costs GPU minutes):
+
+```bash
+uv run python scripts/smoke_t2v.py --url "$DIRECTOR_URL"   # downloads the MP4 to outputs/
+```
 
 ### 3. Use it (browser)
 
