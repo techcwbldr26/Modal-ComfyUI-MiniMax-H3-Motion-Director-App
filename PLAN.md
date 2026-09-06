@@ -1,4 +1,4 @@
-# PLAN.md — Modal × ComfyUI × MiniMax-H3 Motion Director (no LLM)
+# Modal × ComfyUI × MiniMax-H3 Motion Director
 
 All sources verified live 2026-09-06 via Firecrawl (repo README, `__init__.py`,
 `requirements.txt`, USER_GUIDE.md).
